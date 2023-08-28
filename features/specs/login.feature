@@ -5,7 +5,7 @@ Funcionalidade: Login
     Quero acessar o sitema da Rocklove
     Para que eu possa anunciar meus equipamentos musicais
 
-    @temp
+    @login
     Cenario: login do usuario
 
         Dado que acesso a pagina principal
