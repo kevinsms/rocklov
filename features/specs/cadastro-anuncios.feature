@@ -20,13 +20,20 @@ Funcionalidade: Cadasdtro de anuncios
         Então devo ver esse item no meu Dashboard
 
     @temp
-    Cenario: Anuncio sem foto
+    Esquema do Cenario: Tentativa de cadastro de anúncios
 
         Dado que acesso o formulario de cadastro de anuncios
         E que eu tenho o seguinte equipamento:
-            | thumb     |               |
-            | nome      | Fender Strato |
-            | categoria | Cordas        |
-            | preco     | 200           |
+            | thumb     | <foto>      |
+            | nome      | <nome>      |
+            | categoria | <categoria> |
+            | preco     | <preco>     |
         Quando submeto o casdatro desse item
-        Então deve conter a mensagem de alerta "Adicione uma foto no seu anúncio!"
+        Então deve conter a mensagem de alerta "<saida>"
+
+        Exemplos:
+            | foto          | nome              | categoria | preco | saida                             |
+            |               | Violao de Nylon   | Cordas    | 150   | Adicione uma foto no seu anúncio! |
+            | clarinete.jpg |                   | Outros    | 250   | Informe a descrição do anúncio!   |
+            | mic.jpg       | Microfone Shure   |           | 100   | Informe a categoria               |
+            | trompete.jpg  | Trompete classico | Outros    |       | Informe o valor da diária         |
