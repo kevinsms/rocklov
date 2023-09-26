@@ -3,7 +3,7 @@ default: --publish-quiet -p allure -p bdd -p local -p chrome
 bdd: -f pretty
 dots: -f progress
 html: -f html -o logs/report.html
-allure: --format AllureCucumber::CucumberFormatter --out=allure-reports
+allure: --format AllureCucumber::CucumberFormatter --out=allure-results
 local: CONFIG=local.yml
 hmg: CONFIG=hmg.yml
 firefox: BROWSER=firefox
