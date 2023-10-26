@@ -9,7 +9,7 @@ Funcionalidade: Login
     Cenario: login do usuario
 
         Dado que acesso a pagina principal
-        Quando submeto minhas credenciais com "kevin.santos2@printi.com.br" e "pwd123"
+        Quando submeto minhas credenciais com "kevin.teste@hotmail.com.br" e "pwd123"
         Então sou redirecionado para o Dashboard
 
     Esquema do Cenario: Tentar logar
@@ -20,11 +20,11 @@ Funcionalidade: Login
 
         Exemplos:
 
-            | email_input                 | password_input | mensagem_output                  |
-            | kevin.santos2@printi.com.br | abc123         | Usuário e/ou senha inválidos.    |
-            | kevin.santos@404.com.br     | abc123         | Usuário e/ou senha inválidos.    |
-            | kevin.santos$printi.com.br  | abc123         | Oops. Informe um email válido!   |
-            |                             | abc123         | Oops. Informe um email válido!   |
-            | kevin.santos@printi.com.br  |                | Oops. Informe sua senha secreta! |
+            | email_input                  | password_input | mensagem_output                  |
+            | kevin.santos2@hotmail.com.br | abc123         | Usuário e/ou senha inválidos.    |
+            | kevin.santos@404.com.br      | abc123         | Usuário e/ou senha inválidos.    |
+            | kevin.santos$hotmail.com.br  | abc123         | Oops. Informe um email válido!   |
+            |                              | abc123         | Oops. Informe um email válido!   |
+            | kevin.santos@hotmail.com.br  |                | Oops. Informe sua senha secreta! |
 
 

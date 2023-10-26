@@ -14,45 +14,6 @@ describe "POST / sessions" do
     end
   end
 
-  # examples = [
-  #   {
-  #     title: "Senha incorreta",
-  #     payload: { email: "kevin.santos2@printi.com.br", password: "pwd123456" },
-  #     code: 401,
-  #     error: "Unauthorized",
-  #   },
-  #   {
-  #     title: "Usuario nao existe",
-  #     payload: { email: "404@printi.com.br", password: "pwd123456" },
-  #     code: 401,
-  #     error: "Unauthorized",
-  #   },
-  #   {
-  #     title: "email em branco",
-  #     payload: { email: "", password: "pwd123456" },
-  #     code: 412,
-  #     error: "required email",
-  #   },
-  #   {
-  #     title: "Sem o campo email",
-  #     payload: { password: "pwd123456" },
-  #     code: 412,
-  #     error: "required email",
-  #   },
-  #   {
-  #     title: "senha em branco",
-  #     payload: { email: "kevin.santos2@printi.com.br", password: "" },
-  #     code: 412,
-  #     error: "required password",
-  #   },
-  #   {
-  #     title: "sem o campo senha",
-  #     payload: { email: "kevin.santos2@printi.com.br" },
-  #     code: 412,
-  #     error: "required password",
-  #   },
-  # ]
-
   examples = Helpers::get_fixture("login")
 
   examples.each do |e|
