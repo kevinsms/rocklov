@@ -6,7 +6,7 @@ Funcionalidade: Cadasdtro de anuncios
     Para que eu possa disponibilizar para locação
 
     Contexto: Login
-        * Login com "kevin.santos2@printi.com.br" e "pwd123"
+        * Login com "kevin.teste@hotmail.com.br" e "pwd123"
 
     Cenario: Novo equipo
 
